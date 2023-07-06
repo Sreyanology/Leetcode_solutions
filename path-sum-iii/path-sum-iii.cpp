@@ -22,7 +22,7 @@ class Solution {
         findPaths(root->left, targetSum, cursum);
         findPaths(root->right, targetSum, cursum);
         m[cursum]--;
-        cursum-=root->val;
+        //cursum-=root->val;
     }
 public:
     int pathSum(TreeNode* root, int targetSum) {
